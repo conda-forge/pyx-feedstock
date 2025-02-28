@@ -1,0 +1,50 @@
+schema_version: 1
+
+context:
+  name: pyx
+  version: 0.16
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/PyX-${{ version }}.tar.gz
+  sha256: 4d8e3e471cd3e9a9bd13d5086cdf7c0af1b0c3f3e195e74f5f63318dc40a66d8
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - pyx
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+
+about:
+  summary: Python package for the generation of PostScript, PDF, and SVG files
+  license: GPL-2.0-or-later
+  license_file: LICENSE
+  homepage: https://pyx-project.org/
+  repository: https://github.com/pyx-project/pyx
+  documentation: https://pyx-project.org/
+
+extra:
+  recipe-maintainers:
+    - JaRoSchm
