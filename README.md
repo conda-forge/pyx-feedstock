@@ -1,7 +1,7 @@
 About pyx-feedstock
 ===================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyx-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tmpe1atcvjj-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pyx-project.org/
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20923&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyx-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tmpe1atcvjj-feedstock?branchName=main">
       </a>
     </td>
   </tr>
