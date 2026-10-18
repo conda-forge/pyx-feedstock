@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyx
-  version: "0.17"
+  version: "0.18"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 3bc8aa809131559f7a5c0e1f1129b42c71ade36df0332113f5c5779384a39af1
+  sha256: 966da6b5186e06fd3849c210dae92c88e120279c0bbecfe03bda3f763e92d7cc
 
 build:
   number: 0
